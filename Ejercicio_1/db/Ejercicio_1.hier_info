@@ -1,0 +1,7 @@
+|Ejercicio_1
+SW0 => g1.IN0
+SW1 => g1.IN1
+SW2 => g2.IN1
+LEDR0 << g2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_1/Ejercicio_1.v
+source_file = 1, C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_1/db/Ejercicio_1.cbx.xml
+design_name = Ejercicio_1
+instance = comp, \LEDR0~output , LEDR0~output, Ejercicio_1, 1
+instance = comp, \SW1~input , SW1~input, Ejercicio_1, 1
+instance = comp, \SW0~input , SW0~input, Ejercicio_1, 1
+instance = comp, \SW2~input , SW2~input, Ejercicio_1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Ejercicio_1, 1
