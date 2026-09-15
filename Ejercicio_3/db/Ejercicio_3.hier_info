@@ -1,0 +1,121 @@
+|Ejercicio_3
+LED0 << full_adder:FA0.port0
+LED1 << full_adder:FA1.port0
+LED2 << full_adder:FA2.port0
+LED3 << full_adder:FA3.port0
+LED4 << <GND>
+SW0 => SW0.IN1
+SW1 => SW1.IN1
+SW2 => SW2.IN1
+SW3 => SW3.IN1
+SW4 => SW4.IN1
+SW5 => SW5.IN1
+SW6 => SW6.IN1
+SW7 => SW7.IN1
+SW8 => SW8.IN1
+
+
+|Ejercicio_3|full_adder:FA0
+LED2 <= half_adder:HA2.port0
+LED3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW2 => SW2.IN1
+SW3 => SW3.IN1
+SW4 => SW4.IN1
+
+
+|Ejercicio_3|full_adder:FA0|half_adder:HA1
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA0|half_adder:HA2
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA1
+LED2 <= half_adder:HA2.port0
+LED3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW2 => SW2.IN1
+SW3 => SW3.IN1
+SW4 => SW4.IN1
+
+
+|Ejercicio_3|full_adder:FA1|half_adder:HA1
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA1|half_adder:HA2
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA2
+LED2 <= half_adder:HA2.port0
+LED3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW2 => SW2.IN1
+SW3 => SW3.IN1
+SW4 => SW4.IN1
+
+
+|Ejercicio_3|full_adder:FA2|half_adder:HA1
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA2|half_adder:HA2
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA3
+LED2 <= half_adder:HA2.port0
+LED3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW2 => SW2.IN1
+SW3 => SW3.IN1
+SW4 => SW4.IN1
+
+
+|Ejercicio_3|full_adder:FA3|half_adder:HA1
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+
+|Ejercicio_3|full_adder:FA3|half_adder:HA2
+LED0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+SW0 => comb.IN0
+SW0 => comb.IN0
+SW1 => comb.IN1
+SW1 => comb.IN1
+
+

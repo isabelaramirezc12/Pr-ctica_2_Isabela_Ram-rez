@@ -1,0 +1,51 @@
+//Descripción jerárquica ascendente, a nivel de compuertas, de un sumador de 4 bits
+
+module half_adder(led0, led1, w0, w1); //Semi-sumador (Módulo Inferior)
+
+input w0, w1;
+output led0, led1;
+
+//Crear ejemplares de compuertas primitivas
+xor (led0, w0, w1);
+and (led1, w0, w1);
+
+endmodule
+
+
+module full_adder(led2, led3, w2, w3, w4); //Sumador completo (Módulo Intermedio)
+
+input w2, w3, w4;
+output led2, led3;
+
+wire w5, w6, w7; //Salidas de XOR y dos AND
+
+//Crear dos ejemplares del semisumador de 2 bits
+half_adder HA1 (w5, w6, w2, w3),
+           HA2 (led2, w7, w5, w4);
+
+or (led3, w7, w6);
+
+endmodule
+
+
+module _4bit_adder(
+    led0, led1, led2, led3, led4,
+    w0, w1, w2, w3, w4, w5, w6, w7, w8
+); //Sumador de 4 bits (Macro Módulo)
+
+
+input w0, w1, w2, w3, w4, w5, w6, w7;
+input w8;
+
+output led0, led1, led2, led3, led4;
+
+wire w9, w10, w11; //Acarreos intermedios
+
+//Crear cuatro ejemplares del sumador completo de 2 bits
+
+full_adder FA0 (led0, w9, w0, w4, w8),
+           FA1 (led1, w10, w1, w5, w9),
+           FA2 (led2, w11, w2, w6, w10),
+           FA3 (led3, led4, w3, w7, w11);
+
+endmodule
