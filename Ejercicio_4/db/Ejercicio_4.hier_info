@@ -1,0 +1,8 @@
+|Ejercicio_4
+SW0 => comb.DATAIN
+SW1 => comb.DATAIN
+SW2 => comb.OE
+SW2 => comb.OE
+LED0 << LED0.DB_MAX_OUTPUT_PORT_TYPE
+
+
