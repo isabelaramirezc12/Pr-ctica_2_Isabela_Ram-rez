@@ -1,0 +1,17 @@
+|Ejercicio_6
+SWA[0] => _.DATAD
+SWA[1] => _.DATAD
+SWA[2] => _.DATAD
+SWA[3] => _.DATAD
+SWB[0] => _.DATAC
+SWB[1] => _.DATAC
+SWB[2] => _.DATAC
+SWB[3] => _.DATAC
+SW8 => _.DATAB
+LED_SUM[0] << _.SUM_OUT
+LED_SUM[1] << _.SUM_OUT
+LED_SUM[2] << _.SUM_OUT
+LED_SUM[3] << _.SUM_OUT
+LED4 << _.SUM_OUT
+
+

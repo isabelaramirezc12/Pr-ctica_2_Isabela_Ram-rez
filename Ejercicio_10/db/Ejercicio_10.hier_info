@@ -1,0 +1,10 @@
+|Ejercicio_10
+SW0 => Mux0.IN0
+SW1 => Mux0.IN1
+SW2 => Mux0.IN2
+SW3 => Mux0.IN3
+SW4[0] => Mux0.IN5
+SW4[1] => Mux0.IN4
+LED0 << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
