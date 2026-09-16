@@ -8,4 +8,4 @@ Código y Pin-planner
 
 ![alt text](image-3.png)
 
-[⋆Da click aquí para acceder al video con la sustentación⋆](link video)
+[⋆Da click aquí para acceder al video con la sustentación⋆](https://youtu.be/R4g_JQCM8MY?si=jclULb_ExOPofcL1)

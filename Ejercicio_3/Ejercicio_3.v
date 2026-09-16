@@ -46,6 +46,6 @@ wire SW9, SW10, SW11; //Acarreos intermedios
 full_adder FA0 (LED0, SW9, SW0, SW4, SW8),
            FA1 (LED1, SW10, SW1, SW5, SW9),
            FA2 (LED2, SW11, SW2, SW6, SW10),
-           FA3 (LED3, led4, SW3, SW7, SW11);
+           FA3 (LED3, LED4, SW3, SW7, SW11);
 
 endmodule

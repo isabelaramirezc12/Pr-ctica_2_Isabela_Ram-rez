@@ -1,5 +1,5 @@
 Fitter report for Ejercicio_3
-Mon Sep 14 22:00:21 2026
+Tue Sep 15 21:54:07 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
-; Fitter Status                   ; Successful - Mon Sep 14 22:00:21 2026      ;
+; Fitter Status                   ; Successful - Tue Sep 15 21:54:07 2026      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; Ejercicio_3                                ;
 ; Top-level Entity Name           ; Ejercicio_3                                ;
@@ -168,8 +168,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 34 ) ; 0.00 % ( 0 / 34 )          ; 0.00 % ( 0 / 34 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 34 ) ; 0.00 % ( 0 / 34 )          ; 0.00 % ( 0 / 34 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 35 ) ; 0.00 % ( 0 / 35 )          ; 0.00 % ( 0 / 35 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 35 ) ; 0.00 % ( 0 / 35 )          ; 0.00 % ( 0 / 35 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -192,7 +192,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 34 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 35 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -228,10 +228,10 @@ The pin-out file can be found in C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_3/outpu
 ;     -- Logic LABs                                           ; 2             ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0             ;       ;
 ;                                                             ;               ;       ;
-; Combinational ALUT usage for logic                          ; 6             ;       ;
+; Combinational ALUT usage for logic                          ; 7             ;       ;
 ;     -- 7 input functions                                    ; 0             ;       ;
 ;     -- 6 input functions                                    ; 0             ;       ;
-;     -- 5 input functions                                    ; 3             ;       ;
+;     -- 5 input functions                                    ; 4             ;       ;
 ;     -- 4 input functions                                    ; 0             ;       ;
 ;     -- <=3 input functions                                  ; 3             ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0             ;       ;
@@ -268,8 +268,8 @@ The pin-out file can be found in C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_3/outpu
 ; Peak interconnect usage (total/H/V)                         ; 0% / 0% / 0%  ;       ;
 ; Maximum fan-out                                             ; 3             ;       ;
 ; Highest non-global fan-out                                  ; 3             ;       ;
-; Total fan-out                                               ; 39            ;       ;
-; Average fan-out                                             ; 1.15          ;       ;
+; Total fan-out                                               ; 45            ;       ;
+; Average fan-out                                             ; 1.29          ;       ;
 +-------------------------------------------------------------+---------------+-------+
 
 
@@ -298,10 +298,10 @@ The pin-out file can be found in C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_3/outpu
 ;     -- Logic LABs                                           ; 2                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
-; Combinational ALUT usage for logic                          ; 6                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 7                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                   ; 0                              ;
 ;     -- 6 input functions                                    ; 0                   ; 0                              ;
-;     -- 5 input functions                                    ; 3                   ; 0                              ;
+;     -- 5 input functions                                    ; 4                   ; 0                              ;
 ;     -- 4 input functions                                    ; 0                   ; 0                              ;
 ;     -- <=3 input functions                                  ; 3                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                   ; 0                              ;
@@ -331,7 +331,7 @@ The pin-out file can be found in C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_3/outpu
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
-;     -- Total Connections                                    ; 39                  ; 0                              ;
+;     -- Total Connections                                    ; 45                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -366,12 +366,12 @@ The pin-out file can be found in C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_3/outpu
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 ; SW0  ; U13   ; 4A       ; 33           ; 0            ; 40           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
 ; SW1  ; V13   ; 4A       ; 33           ; 0            ; 57           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
-; SW2  ; T13   ; 4A       ; 34           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
-; SW3  ; T12   ; 4A       ; 34           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
+; SW2  ; T13   ; 4A       ; 34           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
+; SW3  ; T12   ; 4A       ; 34           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
 ; SW4  ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
 ; SW5  ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
-; SW6  ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
-; SW7  ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
+; SW6  ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
+; SW7  ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
 ; SW8  ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 
@@ -903,15 +903,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------+--------------+
-; |Ejercicio_3               ; 3.5 (0.5)            ; 3.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 14   ; 0            ; |Ejercicio_3                               ; work         ;
+; |Ejercicio_3               ; 3.5 (0.5)            ; 3.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 14   ; 0            ; |Ejercicio_3                               ; work         ;
 ;    |full_adder:FA0|        ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA0                ; work         ;
 ;       |half_adder:HA2|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA0|half_adder:HA2 ; work         ;
 ;    |full_adder:FA1|        ; 1.5 (1.0)            ; 1.5 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA1                ; work         ;
 ;       |half_adder:HA2|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA1|half_adder:HA2 ; work         ;
 ;    |full_adder:FA2|        ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA2                ; work         ;
 ;       |half_adder:HA2|     ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA2|half_adder:HA2 ; work         ;
-;    |full_adder:FA3|        ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA3                ; work         ;
-;       |half_adder:HA2|     ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA3|half_adder:HA2 ; work         ;
+;    |full_adder:FA3|        ; 1.0 (0.5)            ; 1.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA3                ; work         ;
+;       |half_adder:HA2|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Ejercicio_3|full_adder:FA3|half_adder:HA2 ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -926,13 +926,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LED2 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LED3 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LED4 ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; SW8  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW8  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW0  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW4  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW1  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW5  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW2  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW6  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW2  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW6  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW3  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW7  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
@@ -944,9 +944,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                       ; Pad To Core Index ; Setting ;
 +-------------------------------------------+-------------------+---------+
 ; SW8                                       ;                   ;         ;
-;      - full_adder:FA0|half_adder:HA2|LED0 ; 1                 ; 0       ;
-;      - full_adder:FA1|half_adder:HA2|LED0 ; 1                 ; 0       ;
-;      - full_adder:FA1|LED3                ; 1                 ; 0       ;
+;      - full_adder:FA0|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA1|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA1|LED3                ; 0                 ; 0       ;
 ; SW0                                       ;                   ;         ;
 ;      - full_adder:FA0|half_adder:HA2|LED0 ; 0                 ; 0       ;
 ;      - full_adder:FA1|half_adder:HA2|LED0 ; 0                 ; 0       ;
@@ -962,15 +962,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - full_adder:FA1|half_adder:HA2|LED0 ; 1                 ; 0       ;
 ;      - full_adder:FA1|LED3                ; 1                 ; 0       ;
 ; SW2                                       ;                   ;         ;
-;      - full_adder:FA2|half_adder:HA2|LED0 ; 1                 ; 0       ;
-;      - full_adder:FA3|half_adder:HA2|LED0 ; 1                 ; 0       ;
+;      - full_adder:FA2|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA3|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA3|LED3                ; 0                 ; 0       ;
 ; SW6                                       ;                   ;         ;
-;      - full_adder:FA2|half_adder:HA2|LED0 ; 1                 ; 0       ;
-;      - full_adder:FA3|half_adder:HA2|LED0 ; 1                 ; 0       ;
+;      - full_adder:FA2|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA3|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA3|LED3                ; 0                 ; 0       ;
 ; SW3                                       ;                   ;         ;
 ;      - full_adder:FA3|half_adder:HA2|LED0 ; 1                 ; 0       ;
+;      - full_adder:FA3|LED3                ; 1                 ; 0       ;
 ; SW7                                       ;                   ;         ;
 ;      - full_adder:FA3|half_adder:HA2|LED0 ; 0                 ; 0       ;
+;      - full_adder:FA3|LED3                ; 0                 ; 0       ;
 +-------------------------------------------+-------------------+---------+
 
 
@@ -979,16 +983,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+---------+
 ; Name                               ; Fan-Out ;
 +------------------------------------+---------+
+; SW6~input                          ; 3       ;
+; SW2~input                          ; 3       ;
 ; SW4~input                          ; 3       ;
 ; SW0~input                          ; 3       ;
 ; SW8~input                          ; 3       ;
-; SW6~input                          ; 2       ;
-; SW2~input                          ; 2       ;
+; full_adder:FA1|LED3                ; 3       ;
+; SW7~input                          ; 2       ;
+; SW3~input                          ; 2       ;
 ; SW5~input                          ; 2       ;
 ; SW1~input                          ; 2       ;
-; full_adder:FA1|LED3                ; 2       ;
-; SW7~input                          ; 1       ;
-; SW3~input                          ; 1       ;
+; full_adder:FA3|LED3                ; 1       ;
 ; full_adder:FA3|half_adder:HA2|LED0 ; 1       ;
 ; full_adder:FA2|half_adder:HA2|LED0 ; 1       ;
 ; full_adder:FA1|half_adder:HA2|LED0 ; 1       ;
@@ -1001,21 +1006,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 13 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 9 / 6,048 ( < 1 % )    ;
-; C2 interconnects             ; 3 / 54,648 ( < 1 % )   ;
-; C4 interconnects             ; 16 / 25,920 ( < 1 % )  ;
+; Block interconnects          ; 17 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 4 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 4 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 26 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
 ; Direct links                 ; 0 / 140,056 ( 0 % )    ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
-; Local interconnects          ; 1 / 36,960 ( < 1 % )   ;
+; Local interconnects          ; 0 / 36,960 ( 0 % )     ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 5 / 5,984 ( < 1 % )    ;
-; R14/C12 interconnect drivers ; 5 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 7 / 60,192 ( < 1 % )   ;
-; R6 interconnects             ; 18 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 2 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 2 / 9,504 ( < 1 % )    ;
+; R3 interconnects             ; 6 / 60,192 ( < 1 % )   ;
+; R6 interconnects             ; 37 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 120 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1171,7 +1176,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1180,9 +1185,9 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_3/output_files/Ejercicio_3.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 5393 megabytes
-    Info: Processing ended: Mon Sep 14 22:00:22 2026
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Processing ended: Tue Sep 15 21:54:07 2026
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +----------------------------+
