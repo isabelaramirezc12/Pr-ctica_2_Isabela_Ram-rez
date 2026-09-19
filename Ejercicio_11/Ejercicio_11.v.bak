@@ -1,0 +1,452 @@
+//Ejercicio 11 
+// Display 7 segmentos 
+module Ejercicio_11(
+    SW0,
+    SW1,
+    SW2,
+
+    LED0,
+    LED1,
+    LED2,
+    LED3,
+    LED4,
+    LED5,
+    LED6,
+
+    LED7,
+    LED8,
+    LED9,
+    LED10,
+    LED11,
+    LED12,
+    LED13,
+
+    LED14,
+    LED15,
+    LED16,
+    LED17,
+    LED18,
+    LED19,
+    LED20,
+
+    LED21,
+    LED22,
+    LED23,
+    LED24,
+    LED25,
+    LED26,
+    LED27,
+
+    LED28,
+    LED29,
+    LED30,
+    LED31,
+    LED32,
+    LED33,
+    LED34,
+
+    LED35,
+    LED36,
+    LED37,
+    LED38,
+    LED39,
+    LED40,
+    LED41
+);
+
+
+//=========================================================
+// ENTRADAS
+//=========================================================
+
+input SW0;
+input SW1;
+input SW2;
+
+
+//=========================================================
+// SALIDAS
+//=========================================================
+
+output LED0;
+output LED1;
+output LED2;
+output LED3;
+output LED4;
+output LED5;
+output LED6;
+
+output LED7;
+output LED8;
+output LED9;
+output LED10;
+output LED11;
+output LED12;
+output LED13;
+
+output LED14;
+output LED15;
+output LED16;
+output LED17;
+output LED18;
+output LED19;
+output LED20;
+
+output LED21;
+output LED22;
+output LED23;
+output LED24;
+output LED25;
+output LED26;
+output LED27;
+
+output LED28;
+output LED29;
+output LED30;
+output LED31;
+output LED32;
+output LED33;
+output LED34;
+
+output LED35;
+output LED36;
+output LED37;
+output LED38;
+output LED39;
+output LED40;
+output LED41;
+
+
+//=========================================================
+// SEÑAL DE SELECCIÓN
+//=========================================================
+
+wire [2:0] iSelect;
+
+assign iSelect[0] = SW0;
+assign iSelect[1] = SW1;
+assign iSelect[2] = SW2;
+
+
+//=========================================================
+// SEÑALES INTERNAS
+//=========================================================
+
+wire [3:0] dato1;
+wire [3:0] dato2;
+wire [3:0] dato3;
+wire [3:0] dato4;
+wire [3:0] dato5;
+wire [3:0] dato6;
+
+wire [5:0] display_n;
+
+
+//=========================================================
+// NÚMERO FIJO = 2
+//=========================================================
+
+wire [3:0] iA = 4'h2;
+
+
+//=========================================================
+// DECODIFICADOR 3 A 6
+//=========================================================
+
+mydeco3to6 IC01(
+    display_n,
+    iSelect
+);
+
+
+//=========================================================
+// MULTIPLEXORES 4 A 4
+//=========================================================
+
+mymux4to4 IC02(
+    dato1,
+    iA,
+    display_n[0]
+);
+
+mymux4to4 IC03(
+    dato2,
+    iA,
+    display_n[1]
+);
+
+mymux4to4 IC04(
+    dato3,
+    iA,
+    display_n[2]
+);
+
+mymux4to4 IC05(
+    dato4,
+    iA,
+    display_n[3]
+);
+
+mymux4to4 IC06(
+    dato5,
+    iA,
+    display_n[4]
+);
+
+mymux4to4 IC07(
+    dato6,
+    iA,
+    display_n[5]
+);
+
+
+//=========================================================
+// SALIDAS INTERNAS DE LOS 6 DISPLAYS
+//=========================================================
+
+wire [6:0] oDisplay1;
+wire [6:0] oDisplay2;
+wire [6:0] oDisplay3;
+wire [6:0] oDisplay4;
+wire [6:0] oDisplay5;
+wire [6:0] oDisplay6;
+
+
+//=========================================================
+// DECODIFICADORES DE 7 SEGMENTOS
+//=========================================================
+
+mydeco_display7 IC08(
+    oDisplay1,
+    dato1
+);
+
+mydeco_display7 IC09(
+    oDisplay2,
+    dato2
+);
+
+mydeco_display7 IC10(
+    oDisplay3,
+    dato3
+);
+
+mydeco_display7 IC11(
+    oDisplay4,
+    dato4
+);
+
+mydeco_display7 IC12(
+    oDisplay5,
+    dato5
+);
+
+mydeco_display7 IC13(
+    oDisplay6,
+    dato6
+);
+
+
+//=========================================================
+// CONEXIÓN DISPLAY 1
+//=========================================================
+
+assign LED0 = oDisplay1[6];   // a
+assign LED1 = oDisplay1[5];   // b
+assign LED2 = oDisplay1[4];   // c
+assign LED3 = oDisplay1[3];   // d
+assign LED4 = oDisplay1[2];   // e
+assign LED5 = oDisplay1[1];   // f
+assign LED6 = oDisplay1[0];   // g
+
+
+//=========================================================
+// CONEXIÓN DISPLAY 2
+//=========================================================
+
+assign LED7  = oDisplay2[6];  // a
+assign LED8  = oDisplay2[5];  // b
+assign LED9  = oDisplay2[4];  // c
+assign LED10 = oDisplay2[3];  // d
+assign LED11 = oDisplay2[2];  // e
+assign LED12 = oDisplay2[1];  // f
+assign LED13 = oDisplay2[0];  // g
+
+
+//=========================================================
+// CONEXIÓN DISPLAY 3
+//=========================================================
+
+assign LED14 = oDisplay3[6];  // a
+assign LED15 = oDisplay3[5];  // b
+assign LED16 = oDisplay3[4];  // c
+assign LED17 = oDisplay3[3];  // d
+assign LED18 = oDisplay3[2];  // e
+assign LED19 = oDisplay3[1];  // f
+assign LED20 = oDisplay3[0];  // g
+
+
+//=========================================================
+// CONEXIÓN DISPLAY 4
+//=========================================================
+
+assign LED21 = oDisplay4[6];  // a
+assign LED22 = oDisplay4[5];  // b
+assign LED23 = oDisplay4[4];  // c
+assign LED24 = oDisplay4[3];  // d
+assign LED25 = oDisplay4[2];  // e
+assign LED26 = oDisplay4[1];  // f
+assign LED27 = oDisplay4[0];  // g
+
+
+//=========================================================
+// CONEXIÓN DISPLAY 5
+//=========================================================
+
+assign LED28 = oDisplay5[6];  // a
+assign LED29 = oDisplay5[5];  // b
+assign LED30 = oDisplay5[4];  // c
+assign LED31 = oDisplay5[3];  // d
+assign LED32 = oDisplay5[2];  // e
+assign LED33 = oDisplay5[1];  // f
+assign LED34 = oDisplay5[0];  // g
+
+
+//=========================================================
+// CONEXIÓN DISPLAY 6
+//=========================================================
+
+assign LED35 = oDisplay6[6];  // a
+assign LED36 = oDisplay6[5];  // b
+assign LED37 = oDisplay6[4];  // c
+assign LED38 = oDisplay6[3];  // d
+assign LED39 = oDisplay6[2];  // e
+assign LED40 = oDisplay6[1];  // f
+assign LED41 = oDisplay6[0];  // g
+
+endmodule
+
+
+
+//=========================================================
+// SUBMÓDULO:
+// DECODIFICADOR BINARIO A 7 SEGMENTOS
+//=========================================================
+
+module mydeco_display7(Seg,A);
+
+input [3:0] A;
+
+output reg [6:0] Seg;
+
+// Seg[6] = a
+// Seg[5] = b
+// Seg[4] = c
+// Seg[3] = d
+// Seg[2] = e
+// Seg[1] = f
+// Seg[0] = g
+
+always @*
+
+case (A)
+
+    4'b0000 : Seg <= 7'b0000001; // 0
+    4'b0001 : Seg <= 7'b1111001; // 1
+    4'b0010 : Seg <= 7'b0100100; // 2
+    4'b0011 : Seg <= 7'b0110000; // 3
+    4'b0100 : Seg <= 7'b0011001; // 4
+    4'b0101 : Seg <= 7'b0010010; // 5
+    4'b0110 : Seg <= 7'b0000010; // 6
+    4'b0111 : Seg <= 7'b1111000; // 7
+    4'b1000 : Seg <= 7'b0000000; // 8
+    4'b1001 : Seg <= 7'b0011000; // 9
+    4'b1010 : Seg <= 7'b0001000; // A
+
+    default : Seg <= 7'b1111111; // Apagado
+
+endcase
+
+endmodule
+
+
+
+//=========================================================
+// SUBMÓDULO:
+// MULTIPLEXOR 4 A 4
+//=========================================================
+
+module mymux4to4(Y,A,S);
+
+input [3:0] A;
+input S;
+
+output [3:0] Y;
+
+assign Y = S ? A : 4'b1111;
+
+endmodule
+
+
+
+//=========================================================
+// SUBMÓDULO:
+// DECODIFICADOR 3 A 6
+//=========================================================
+
+module mydeco3to6(Y,D);
+
+input [2:0] D;
+
+output [5:0] Y;
+
+wire A;
+wire B;
+wire C;
+
+wire Anot;
+wire Bnot;
+wire Cnot;
+
+
+//---------------------------------------------------------
+// Buffers
+//---------------------------------------------------------
+
+buf (A,D[0]);
+buf (B,D[1]);
+buf (C,D[2]);
+
+
+//---------------------------------------------------------
+// NOT
+//---------------------------------------------------------
+
+not (Anot,D[0]);
+not (Bnot,D[1]);
+not (Cnot,D[2]);
+
+
+//---------------------------------------------------------
+// DECODIFICACIÓN
+//---------------------------------------------------------
+
+// 000 -> Display 1
+and g1(Y[0],Cnot,Bnot,Anot);
+
+// 001 -> Display 2
+and g2(Y[1],Cnot,Bnot,A);
+
+// 010 -> Display 3
+and g3(Y[2],Cnot,B,Anot);
+
+// 011 -> Display 4
+and g4(Y[3],Cnot,B,A);
+
+// 100 -> Display 5
+and g5(Y[4],C,Bnot,Anot);
+
+// 101 -> Display 6
+and g6(Y[5],C,Bnot,A);
+
+endmodule
