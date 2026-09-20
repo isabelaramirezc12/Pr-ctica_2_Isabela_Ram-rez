@@ -112,7 +112,7 @@ assign HEX4 =
 // Si D = 0...9:
 // HEX5 permanece apagado.
 //
-// E en display activo en bajo:
+// E:
 // a = 0
 // b = 1
 // c = 1
@@ -121,8 +121,9 @@ assign HEX4 =
 // f = 0
 // g = 0
 //
-// HEX5 = 0110000
+// Como HEX5[6:0] = gfedcba:
+// E = 0000110
 
-assign HEX5 = valid ? 7'b1111111 : 7'b0110000;
+assign HEX5 = valid ? 7'b1111111 : 7'b0000110;
 
 endmodule

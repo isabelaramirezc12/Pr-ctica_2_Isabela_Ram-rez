@@ -1,5 +1,5 @@
 Fitter report for Ejercicio_12
-Sat Sep 19 19:54:32 2026
+Sat Sep 19 20:04:40 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
-; Fitter Status                   ; Successful - Sat Sep 19 19:54:32 2026      ;
+; Fitter Status                   ; Successful - Sat Sep 19 20:04:40 2026      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; Ejercicio_12                               ;
 ; Top-level Entity Name           ; Ejercicio_12                               ;
@@ -1038,9 +1038,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
 ; Block interconnects          ; 20 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 3 / 6,048 ( < 1 % )    ;
-; C2 interconnects             ; 4 / 54,648 ( < 1 % )   ;
-; C4 interconnects             ; 25 / 25,920 ( < 1 % )  ;
+; C12 interconnects            ; 2 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 7 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 28 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
@@ -1050,8 +1050,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
 ; R14 interconnects            ; 12 / 5,984 ( < 1 % )   ;
 ; R14/C12 interconnect drivers ; 13 / 9,504 ( < 1 % )   ;
-; R3 interconnects             ; 11 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 34 / 127,072 ( < 1 % ) ;
+; R3 interconnects             ; 10 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 39 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 120 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1215,7 +1215,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1223,9 +1223,9 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Pr-ctica_2_Isabela_Ram-rez/Ejercicio_12/output_files/Ejercicio_12.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5394 megabytes
-    Info: Processing ended: Sat Sep 19 19:54:33 2026
-    Info: Elapsed time: 00:00:19
+    Info: Peak virtual memory: 5401 megabytes
+    Info: Processing ended: Sat Sep 19 20:04:40 2026
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:19
 
 

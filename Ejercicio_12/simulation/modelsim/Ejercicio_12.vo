@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "09/19/2026 19:54:47"
+// DATE "09/19/2026 20:04:55"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -298,7 +298,7 @@ defparam \HEX5[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X22_Y0_N19
 cyclonev_io_obuf \HEX5[1]~output (
-	.i(\valid~combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -314,7 +314,7 @@ defparam \HEX5[1]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X43_Y0_N19
 cyclonev_io_obuf \HEX5[2]~output (
-	.i(\valid~combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -346,7 +346,7 @@ defparam \HEX5[3]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X0_Y21_N56
 cyclonev_io_obuf \HEX5[4]~output (
-	.i(vcc),
+	.i(\valid~combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -362,7 +362,7 @@ defparam \HEX5[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X0_Y21_N39
 cyclonev_io_obuf \HEX5[5]~output (
-	.i(vcc),
+	.i(\valid~combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -449,7 +449,7 @@ defparam \SW2~input .bus_hold = "false";
 defparam \SW2~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: MLABCELL_X23_Y3_N9
+// Location: MLABCELL_X23_Y3_N39
 cyclonev_lcell_comb \Gray~1 (
 // Equation(s):
 // \Gray~1_combout  = !\SW2~input_o  $ (!\SW1~input_o )
@@ -676,7 +676,7 @@ defparam \HEX4~3 .lut_mask = 64'hC0C3C0C33F3F3F3F;
 defparam \HEX4~3 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: MLABCELL_X23_Y3_N6
+// Location: MLABCELL_X23_Y3_N36
 cyclonev_lcell_comb valid(
 // Equation(s):
 // \valid~combout  = ( \SW3~input_o  & ( (!\SW2~input_o  & !\SW1~input_o ) ) ) # ( !\SW3~input_o  )
