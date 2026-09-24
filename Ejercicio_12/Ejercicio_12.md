@@ -16,6 +16,10 @@ Código y Pin-planner
 
 ![alt text](image-7.png)
 
+Diagrama de bloque
+
+![alt text](image-10.png)
+
 Simulación en ModelSim con los siguientes 5 números binarios:
 0, 5, 8, 10, 15
 
