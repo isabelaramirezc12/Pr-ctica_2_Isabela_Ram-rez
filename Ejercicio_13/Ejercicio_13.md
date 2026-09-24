@@ -10,6 +10,9 @@ Código y Pin-planner
 
 Diagrama de bloque
 
+![alt text](image-14.png)
+
+
 Simulaciones en ModelSim 
 
 - Operación A+B:
