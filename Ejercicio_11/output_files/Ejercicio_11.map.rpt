@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ejercicio_11
-Sat Sep 19 15:57:45 2026
+Thu Sep 24 13:33:33 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Sep 19 15:57:45 2026      ;
+; Analysis & Synthesis Status     ; Successful - Thu Sep 24 13:33:33 2026      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; Ejercicio_11                               ;
 ; Top-level Entity Name           ; Ejercicio_11                               ;
@@ -246,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Sep 19 15:57:43 2026
+    Info: Processing started: Thu Sep 24 13:33:30 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ejercicio_11 -c Ejercicio_11
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 4 design units, including 4 entities, in source file ejercicio_11.v
@@ -261,18 +261,18 @@ Info (12128): Elaborating entity "mydeco_display7" for hierarchy "mydeco_display
 Info (13014): Ignored 3 buffer(s)
     Info (13019): Ignored 3 SOFT buffer(s)
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LED1" is stuck at VCC
-    Warning (13410): Pin "LED4" is stuck at VCC
-    Warning (13410): Pin "LED8" is stuck at VCC
-    Warning (13410): Pin "LED11" is stuck at VCC
-    Warning (13410): Pin "LED15" is stuck at VCC
-    Warning (13410): Pin "LED18" is stuck at VCC
-    Warning (13410): Pin "LED22" is stuck at VCC
-    Warning (13410): Pin "LED25" is stuck at VCC
-    Warning (13410): Pin "LED29" is stuck at VCC
-    Warning (13410): Pin "LED32" is stuck at VCC
-    Warning (13410): Pin "LED36" is stuck at VCC
-    Warning (13410): Pin "LED39" is stuck at VCC
+    Warning (13410): Pin "LED2" is stuck at VCC
+    Warning (13410): Pin "LED5" is stuck at VCC
+    Warning (13410): Pin "LED9" is stuck at VCC
+    Warning (13410): Pin "LED12" is stuck at VCC
+    Warning (13410): Pin "LED16" is stuck at VCC
+    Warning (13410): Pin "LED19" is stuck at VCC
+    Warning (13410): Pin "LED23" is stuck at VCC
+    Warning (13410): Pin "LED26" is stuck at VCC
+    Warning (13410): Pin "LED30" is stuck at VCC
+    Warning (13410): Pin "LED33" is stuck at VCC
+    Warning (13410): Pin "LED37" is stuck at VCC
+    Warning (13410): Pin "LED40" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -281,9 +281,9 @@ Info (21057): Implemented 51 device resources after synthesis - the final resour
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 6 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4675 megabytes
-    Info: Processing ended: Sat Sep 19 15:57:45 2026
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4660 megabytes
+    Info: Processing ended: Thu Sep 24 13:33:33 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

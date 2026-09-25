@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "09/19/2026 15:43:47"
+// DATE "09/24/2026 13:34:29"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -180,9 +180,9 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \SW2~input_o ;
 wire \SW0~input_o ;
 wire \SW1~input_o ;
-wire \SW2~input_o ;
 wire \IC01|g1~0_combout ;
 wire \IC01|g1~1_combout ;
 wire \IC01|g1~2_combout ;
@@ -209,7 +209,7 @@ defparam \LED0~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X51_Y0_N36
 cyclonev_io_obuf \LED1~output (
-	.i(vcc),
+	.i(!\IC01|g1~0_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -225,7 +225,7 @@ defparam \LED1~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X48_Y0_N76
 cyclonev_io_obuf \LED2~output (
-	.i(!\IC01|g1~0_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -257,7 +257,7 @@ defparam \LED3~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X48_Y0_N93
 cyclonev_io_obuf \LED4~output (
-	.i(vcc),
+	.i(!\IC01|g1~0_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -273,7 +273,7 @@ defparam \LED4~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X50_Y0_N53
 cyclonev_io_obuf \LED5~output (
-	.i(!\IC01|g1~0_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -321,7 +321,7 @@ defparam \LED7~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X40_Y0_N93
 cyclonev_io_obuf \LED8~output (
-	.i(vcc),
+	.i(!\IC01|g1~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -337,7 +337,7 @@ defparam \LED8~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X44_Y0_N53
 cyclonev_io_obuf \LED9~output (
-	.i(!\IC01|g1~1_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -369,7 +369,7 @@ defparam \LED10~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X38_Y0_N36
 cyclonev_io_obuf \LED11~output (
-	.i(vcc),
+	.i(!\IC01|g1~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -385,7 +385,7 @@ defparam \LED11~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X43_Y0_N53
 cyclonev_io_obuf \LED12~output (
-	.i(!\IC01|g1~1_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -433,7 +433,7 @@ defparam \LED14~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X38_Y0_N53
 cyclonev_io_obuf \LED15~output (
-	.i(vcc),
+	.i(!\IC01|g1~2_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -449,7 +449,7 @@ defparam \LED15~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X22_Y0_N53
 cyclonev_io_obuf \LED16~output (
-	.i(!\IC01|g1~2_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -481,7 +481,7 @@ defparam \LED17~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X38_Y0_N19
 cyclonev_io_obuf \LED18~output (
-	.i(vcc),
+	.i(!\IC01|g1~2_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -497,7 +497,7 @@ defparam \LED18~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X46_Y0_N53
 cyclonev_io_obuf \LED19~output (
-	.i(!\IC01|g1~2_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -545,7 +545,7 @@ defparam \LED21~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X46_Y0_N2
 cyclonev_io_obuf \LED22~output (
-	.i(vcc),
+	.i(!\IC01|g1~3_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -561,7 +561,7 @@ defparam \LED22~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X40_Y0_N42
 cyclonev_io_obuf \LED23~output (
-	.i(!\IC01|g1~3_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -593,7 +593,7 @@ defparam \LED24~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X52_Y0_N2
 cyclonev_io_obuf \LED25~output (
-	.i(vcc),
+	.i(!\IC01|g1~3_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -609,7 +609,7 @@ defparam \LED25~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X51_Y0_N2
 cyclonev_io_obuf \LED26~output (
-	.i(!\IC01|g1~3_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -657,7 +657,7 @@ defparam \LED28~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X48_Y0_N59
 cyclonev_io_obuf \LED29~output (
-	.i(vcc),
+	.i(!\IC01|g1~4_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -673,7 +673,7 @@ defparam \LED29~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X44_Y0_N19
 cyclonev_io_obuf \LED30~output (
-	.i(!\IC01|g1~4_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -705,7 +705,7 @@ defparam \LED31~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X43_Y0_N2
 cyclonev_io_obuf \LED32~output (
-	.i(vcc),
+	.i(!\IC01|g1~4_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -721,7 +721,7 @@ defparam \LED32~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X36_Y0_N2
 cyclonev_io_obuf \LED33~output (
-	.i(!\IC01|g1~4_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -769,7 +769,7 @@ defparam \LED35~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X22_Y0_N19
 cyclonev_io_obuf \LED36~output (
-	.i(vcc),
+	.i(!\IC01|g1~5_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -785,7 +785,7 @@ defparam \LED36~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X43_Y0_N19
 cyclonev_io_obuf \LED37~output (
-	.i(!\IC01|g1~5_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -817,7 +817,7 @@ defparam \LED38~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X0_Y21_N56
 cyclonev_io_obuf \LED39~output (
-	.i(vcc),
+	.i(!\IC01|g1~5_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -833,7 +833,7 @@ defparam \LED39~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X0_Y21_N39
 cyclonev_io_obuf \LED40~output (
-	.i(!\IC01|g1~5_combout ),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -863,6 +863,17 @@ defparam \LED41~output .open_drain_output = "false";
 defparam \LED41~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
+// Location: IOIBUF_X34_Y0_N1
+cyclonev_io_ibuf \SW2~input (
+	.i(SW2),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW2~input_o ));
+// synopsys translate_off
+defparam \SW2~input .bus_hold = "false";
+defparam \SW2~input .simulate_z_as = "z";
+// synopsys translate_on
+
 // Location: IOIBUF_X33_Y0_N41
 cyclonev_io_ibuf \SW0~input (
 	.i(SW0),
@@ -885,28 +896,17 @@ defparam \SW1~input .bus_hold = "false";
 defparam \SW1~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y0_N1
-cyclonev_io_ibuf \SW2~input (
-	.i(SW2),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\SW2~input_o ));
-// synopsys translate_off
-defparam \SW2~input .bus_hold = "false";
-defparam \SW2~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: LABCELL_X41_Y1_N30
+// Location: LABCELL_X39_Y2_N30
 cyclonev_lcell_comb \IC01|g1~0 (
 // Equation(s):
-// \IC01|g1~0_combout  = ( !\SW2~input_o  & ( (!\SW0~input_o  & !\SW1~input_o ) ) )
+// \IC01|g1~0_combout  = ( !\SW1~input_o  & ( (!\SW2~input_o  & !\SW0~input_o ) ) )
 
-	.dataa(!\SW0~input_o ),
-	.datab(!\SW1~input_o ),
+	.dataa(!\SW2~input_o ),
+	.datab(!\SW0~input_o ),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\SW2~input_o ),
+	.dataf(!\SW1~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -920,17 +920,17 @@ defparam \IC01|g1~0 .lut_mask = 64'h8888888800000000;
 defparam \IC01|g1~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X41_Y1_N33
+// Location: LABCELL_X39_Y2_N33
 cyclonev_lcell_comb \IC01|g1~1 (
 // Equation(s):
-// \IC01|g1~1_combout  = ( !\SW2~input_o  & ( (\SW0~input_o  & !\SW1~input_o ) ) )
+// \IC01|g1~1_combout  = ( !\SW1~input_o  & ( (!\SW2~input_o  & \SW0~input_o ) ) )
 
-	.dataa(!\SW0~input_o ),
-	.datab(!\SW1~input_o ),
+	.dataa(!\SW2~input_o ),
+	.datab(!\SW0~input_o ),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\SW2~input_o ),
+	.dataf(!\SW1~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -940,21 +940,21 @@ cyclonev_lcell_comb \IC01|g1~1 (
 	.shareout());
 // synopsys translate_off
 defparam \IC01|g1~1 .extended_lut = "off";
-defparam \IC01|g1~1 .lut_mask = 64'h4444444400000000;
+defparam \IC01|g1~1 .lut_mask = 64'h2222222200000000;
 defparam \IC01|g1~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X41_Y1_N6
+// Location: LABCELL_X39_Y2_N36
 cyclonev_lcell_comb \IC01|g1~2 (
 // Equation(s):
-// \IC01|g1~2_combout  = ( !\SW2~input_o  & ( (!\SW0~input_o  & \SW1~input_o ) ) )
+// \IC01|g1~2_combout  = ( \SW1~input_o  & ( (!\SW0~input_o  & !\SW2~input_o ) ) )
 
-	.dataa(!\SW0~input_o ),
-	.datab(!\SW1~input_o ),
-	.datac(gnd),
+	.dataa(gnd),
+	.datab(!\SW0~input_o ),
+	.datac(!\SW2~input_o ),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\SW2~input_o ),
+	.dataf(!\SW1~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -964,21 +964,21 @@ cyclonev_lcell_comb \IC01|g1~2 (
 	.shareout());
 // synopsys translate_off
 defparam \IC01|g1~2 .extended_lut = "off";
-defparam \IC01|g1~2 .lut_mask = 64'h2222222200000000;
+defparam \IC01|g1~2 .lut_mask = 64'h00000000C0C0C0C0;
 defparam \IC01|g1~2 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X41_Y1_N9
+// Location: LABCELL_X39_Y2_N39
 cyclonev_lcell_comb \IC01|g1~3 (
 // Equation(s):
-// \IC01|g1~3_combout  = ( !\SW2~input_o  & ( (\SW0~input_o  & \SW1~input_o ) ) )
+// \IC01|g1~3_combout  = ( \SW1~input_o  & ( (!\SW2~input_o  & \SW0~input_o ) ) )
 
-	.dataa(!\SW0~input_o ),
-	.datab(!\SW1~input_o ),
+	.dataa(!\SW2~input_o ),
+	.datab(!\SW0~input_o ),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\SW2~input_o ),
+	.dataf(!\SW1~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -988,21 +988,21 @@ cyclonev_lcell_comb \IC01|g1~3 (
 	.shareout());
 // synopsys translate_off
 defparam \IC01|g1~3 .extended_lut = "off";
-defparam \IC01|g1~3 .lut_mask = 64'h1111111100000000;
+defparam \IC01|g1~3 .lut_mask = 64'h0000000022222222;
 defparam \IC01|g1~3 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X41_Y1_N12
+// Location: LABCELL_X39_Y2_N12
 cyclonev_lcell_comb \IC01|g1~4 (
 // Equation(s):
-// \IC01|g1~4_combout  = ( \SW2~input_o  & ( (!\SW0~input_o  & !\SW1~input_o ) ) )
+// \IC01|g1~4_combout  = ( !\SW1~input_o  & ( (!\SW0~input_o  & \SW2~input_o ) ) )
 
-	.dataa(!\SW0~input_o ),
-	.datab(!\SW1~input_o ),
-	.datac(gnd),
+	.dataa(gnd),
+	.datab(!\SW0~input_o ),
+	.datac(!\SW2~input_o ),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\SW2~input_o ),
+	.dataf(!\SW1~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1012,21 +1012,21 @@ cyclonev_lcell_comb \IC01|g1~4 (
 	.shareout());
 // synopsys translate_off
 defparam \IC01|g1~4 .extended_lut = "off";
-defparam \IC01|g1~4 .lut_mask = 64'h0000000088888888;
+defparam \IC01|g1~4 .lut_mask = 64'h0C0C0C0C00000000;
 defparam \IC01|g1~4 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X41_Y1_N15
+// Location: LABCELL_X39_Y2_N15
 cyclonev_lcell_comb \IC01|g1~5 (
 // Equation(s):
-// \IC01|g1~5_combout  = ( \SW2~input_o  & ( (\SW0~input_o  & !\SW1~input_o ) ) )
+// \IC01|g1~5_combout  = ( !\SW1~input_o  & ( (\SW2~input_o  & \SW0~input_o ) ) )
 
-	.dataa(!\SW0~input_o ),
-	.datab(!\SW1~input_o ),
+	.dataa(!\SW2~input_o ),
+	.datab(!\SW0~input_o ),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\SW2~input_o ),
+	.dataf(!\SW1~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1036,11 +1036,11 @@ cyclonev_lcell_comb \IC01|g1~5 (
 	.shareout());
 // synopsys translate_off
 defparam \IC01|g1~5 .extended_lut = "off";
-defparam \IC01|g1~5 .lut_mask = 64'h0000000044444444;
+defparam \IC01|g1~5 .lut_mask = 64'h1111111100000000;
 defparam \IC01|g1~5 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X7_Y22_N0
+// Location: LABCELL_X32_Y18_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 
