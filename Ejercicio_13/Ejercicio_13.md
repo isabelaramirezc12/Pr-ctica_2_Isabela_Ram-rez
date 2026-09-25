@@ -95,3 +95,6 @@ B= 7
 Diagrama RTL
 
 ![alt text](image-3.png)
+
+
+[⋆Da click aquí para acceder al video con la sustentación⋆](https://youtube.com/shorts/UrJDIBJyMPY?si=fM8279Qyx-0tT98u)
